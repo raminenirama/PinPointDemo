@@ -1,0 +1,26 @@
+{
+  "Version": "1.0",
+  "CredentialsProvider": {
+    "CognitoIdentity": {
+      "Default": {
+        "PoolId": "us-east-1:3d183536-f8df-4a05-9c5a-5b7bd0831395",
+        "Region": "us-east-1"
+      }
+    }
+  },
+  "IdentityManager": {
+    "Default": {
+    }
+  },
+  "PinpointAnalytics": {
+    "Default": {
+      "AppId": "f7e6a93fc4f245a3b21a81bf99525735",
+      "Region": "us-east-1"
+    }
+  },
+  "PinpointTargeting": {
+    "Default": {
+      "Region": "us-east-1"
+    }
+  }
+}
