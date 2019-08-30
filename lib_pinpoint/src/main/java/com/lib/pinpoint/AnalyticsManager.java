@@ -1,9 +1,12 @@
-package com.tech.awspinpointdemo;
+package com.lib.pinpoint;
 
 import android.content.Context;
+import android.os.Build;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
+
+import androidx.annotation.RequiresApi;
 
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.mobile.auth.core.IdentityManager;
@@ -94,6 +97,7 @@ public enum AnalyticsManager {
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     public void logEvent(String name, String value) {
         Log.i(TAG, "logEvent: name:" + name + ", value:" + value);
         if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(value)) {

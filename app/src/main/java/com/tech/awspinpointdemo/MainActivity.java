@@ -4,6 +4,8 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.lib.pinpoint.AnalyticsManager;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -14,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
         AnalyticsManager.INSTANCE.start();
         AnalyticsManager.INSTANCE.logEvent("Test123", "Test123");
     }
-
 
     @Override
     protected void onResume() {
